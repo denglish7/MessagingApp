@@ -13,16 +13,16 @@ import {
 } from 'react-native'
 
 class App extends Component {
-  render() {
-    return (
-      <Router>
-        <Scene key='root' style={{paddingTop: Platform.OS === 'ios' ? 64 : 54 }}>
-          <Scene key='home' component={Home} title='Home'/>
-          <Scene key='chat' component={Chat} title='Chat'/>
-        </Scene>
-      </Router>
-    )
-  }
+    render() {
+        return (
+            <Router>
+                <Scene key='root'>
+                    <Scene key='home' component={Home} title='Welcome!'/>
+                    <Scene key='chat' component={Chat} title='Messages'/>
+                </Scene>
+            </Router>
+        )
+    }
 }
 
 export default App;
