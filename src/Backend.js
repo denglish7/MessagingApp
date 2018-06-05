@@ -1,12 +1,14 @@
 import firebase from 'firebase';
 
+import { FIREBASE_API_KEY } from '../src/constants/creds';
+
 class Backend {
     uid = '';
     messagesRef = null;
 
     constructor() {
         firebase.initializeApp({
-            apiKey: 'AIzaSyA7CcacYawwwnF7WkRXif9XOr2_9S4bdXs',
+            apiKey: FIREBASE_API_KEY,
             authDomain: 'mymessagingproject-5f237.firebaseapp.com',
             databaseURL: 'https://mymessagingproject-5f237.firebaseio.com/'
         });
